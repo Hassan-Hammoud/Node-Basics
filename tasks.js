@@ -34,8 +34,8 @@ function startApp(name) {
 function onDataReceived(text) {
   if (text === "quit\n" || text === "exit\n") {
     quit();
-  } else if (text === "hello\n") {
-    hello();
+  } else if (text.startsWith("hello")) {
+    hellox(text.trim());
   } else if (text === "help\n") {
     help();
   } else {
@@ -82,6 +82,10 @@ function help() {
   console.log(
     "hello!\nQuitting now, goodbye!\nnknown command: ' + c.trim() + '"
   );
+}
+
+function hellox(text) {
+  console.log(text + "!");
 }
 
 // The following line starts the application
