@@ -83,7 +83,11 @@ function help() {
     "hello!\nQuitting now, goodbye!\nnknown command: ' + c.trim() + '"
   );
 }
-
+/**
+ * "handled empty state"
+ *
+ * @returns {void}
+ */
 function hellox(text) {
   console.log(text + "!");
 }
